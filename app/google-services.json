@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "717888800328",
+    "firebase_url": "https://adminhotelapp.firebaseio.com",
+    "project_id": "adminhotelapp",
+    "storage_bucket": "adminhotelapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717888800328:android:36deda291f8b8e390c3a7d",
+        "android_client_info": {
+          "package_name": "arc.hotelapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717888800328-p5f7kfu7asljko6d2fol5n25ifkogmsi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "arc.hotelapp",
+            "certificate_hash": "c9ddf3217c0c667cc87e17014820db588d248346"
+          }
+        },
+        {
+          "client_id": "717888800328-b3aj1rgmnkej7eckr5m7u4m1n70ebb2e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_SpGsCHrXDaG9TXK9Z0gKt_IGdwlPlGc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717888800328-b3aj1rgmnkej7eckr5m7u4m1n70ebb2e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

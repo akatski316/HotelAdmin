@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_events"
+        android:icon="@drawable/ic_hotel_black_24dp"
+        android:title="Rooms" />
+
+    <item
+        android:id="@+id/navigation_notice"
+        android:icon="@drawable/ic_add_white_24dp"
+        android:title="Edit Room types" />
+
+    <item
+        android:id="@+id/navigation_booking"
+        android:icon="@drawable/ic_book_black_24dp"
+        android:title="Bookings" />
+
+</menu>

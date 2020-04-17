@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/searchtoolbar"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        app:collapseIcon="@drawable/ic_arrow_back_theme"
+        app:titleTextColor="?attr/textcolor_theme"
+        android:visibility="visible"
+        app:subtitleTextColor="?attr/textcolor_theme"
+        android:layout_alignParentTop="true"
+        app:titleTextAppearance="?attr/textcolor_faded"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        android:background="?attr/cardbackground"/>
+

@@ -1,0 +1,147 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/cardDark</item>
+        <item name="colorPrimaryDark">@color/notificationDark</item>
+        <item name="colorAccent">@color/app_theme_color</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionBarStyle">@style/AppBarOverlay</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+        <item name="backgroundcolor">@color/fulldark</item>
+        <item name="cardbackground">@color/cardDark</item>
+        <item name="backgroundcolorreverse">@color/cardLight</item>
+        <item name="textcolor_theme">@color/lightTextColor</item>
+        <item name="textcolor_white">@color/white</item>
+        <item name="textcolor_faded">@color/fadedLightTextColor</item>
+        <item name="notificationColor">@color/notificationDark</item>
+
+    </style>
+
+    <style name="LightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/cardLight</item>
+        <item name="colorPrimaryDark">@color/notificationLight</item>
+        <item name="colorAccent">@color/app_theme_color</item>
+        <item name="android:textColorSecondary">@color/fadedBlackTextColor</item>
+        <item name="actionBarStyle">@style/AppBarOverlay</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+        <item name="backgroundcolor">@color/fulllight</item>
+        <item name="cardbackground">@color/cardLight</item>
+        <item name="backgroundcolorreverse">@color/cardDark</item>
+        <item name="textcolor_theme">@color/blackTextColor</item>
+        <item name="textcolor_white">@color/white</item>
+        <item name="textcolor_faded">@color/fadedBlackTextColor</item>
+        <item name="notificationColor">@color/notificationLight</item>
+
+    </style>
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">?attr/textcolor_theme</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Profile_Edit_Activity_Theme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="colorPrimary">@color/app_theme_color</item>
+        <item name="colorPrimaryDark">@color/notificationDark</item>
+        <item name="colorAccent">@color/browser_actions_bg_grey</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionBarStyle">@style/AppBarOverlay</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="elevation">5dp</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="DarkTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="LoginActivity_EditText">
+        <item name="android:background">@drawable/login_edittext_shape</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="RatingBar"
+        parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">#ffffff</item>
+    </style>
+
+    <style name="AppThemeCustom" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/notificationDark</item>
+        <item name="colorPrimaryDark">@color/cardDark</item>
+        <item name="colorAccent">@color/app_theme_color</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/browser_actions_bg_grey</item>
+
+        <item name="android:windowBackground">@color/colorGreen</item>
+        <item name="android:colorBackground">@color/fulldark</item>
+        <item name="colorButtonNormal">@color/colorGreen</item>
+        <item name="colorControlHighlight">@color/app_theme_color</item>
+    </style>
+
+    <style name="SettingsThemeDark" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@color/cardDark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/cardDark</item>
+        <item name="colorPrimaryDark">@color/notificationDark</item>
+        <item name="colorAccent">@color/app_theme_color</item>
+        <item name="android:textColorSecondary">@color/fadedLightTextColor</item>
+        <item name="actionBarStyle">@style/AppBarOverlay</item>
+<!--        <item name="android:windowActivityTransitions">true</item>-->
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+    </style>
+
+    <style name="SettingsThemeLight" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@color/fulllight</item>
+        <item name="android:textColor">@color/blackTextColor</item>
+        <item name="android:textColorHint">@color/fadedBlackTextColor</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/cardLight</item>
+        <item name="colorPrimaryDark">@color/notificationLight</item>
+        <item name="colorAccent">@color/app_theme_color</item>
+        <item name="android:textColorSecondary">@color/fadedLightTextColor</item>
+        <item name="actionBarStyle">@style/AppBarOverlay</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+    </style>
+
+
+    <style name=  "windowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

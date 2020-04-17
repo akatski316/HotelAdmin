@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    dark theme colors-->
+    <color name="notificationDark">#121212</color>
+    <color name="fulldark">#282828</color>
+    <color name="cardDark">#353535</color>
+    <color name="lightTextColor">#f2f2f2</color>
+    <color name="fadedLightTextColor">#A9A9A9</color>
+
+    <!--    light theme colors-->
+    <color name="fulllight">#ffffff</color>
+    <color name="cardLight">#f8f9fb</color>
+    <color name="notificationLight">#c1c1c1</color>
+    <color name="blackTextColor">#181818</color>
+    <color name="fadedBlackTextColor">#484848</color>
+
+    <!--    general colors-->
+    <color name="fullblack">#000000</color>
+    <color name="colorPrimary">#FF4081</color>
+    <color name="app_theme_color">#e60000</color>
+    <color name="light_app_theme_color">#ffebeb</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorGreen">#228B22</color>
+    <color name="grey">#A9A9A9</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="facebook_blue">#3b5998</color>
+
+    <!--    from notice module-->
+    <color name="backgroundTop">#444a5a</color>
+    <color name="backgroundBottom">#f5f6fa</color>
+    <color name="notice_green">#4fc33c</color>
+
+    <color name="item_name_color">#aab4ba</color>
+    <color name="item_info_color">#bdc5cc</color>
+    <color name="item_separator_color">#c8c9cc</color>
+
+    <color name="details_name_color">#333333</color>
+    <color name="details_info_color">@color/item_name_color</color>
+    <color name="details_status_color">#90ba47</color>
+    <color name="details_list_color">#f5f6f9</color>
+    <color name="details_item_header">@color/details_name_color</color>
+    <color name="details_item_text">#858d92</color>
+    <color name="details_item_separator">@color/item_separator_color</color>
+</resources>

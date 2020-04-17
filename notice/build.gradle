@@ -1,0 +1,40 @@
+apply plugin: 'com.android.dynamic-feature'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "arc.cosmos.notice"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 8
+        versionName "1.0"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [
+                        "room.schemaLocation"  : "$projectDir/schemas".toString(),
+                        "room.incremental"     : "true",
+                        "room.expandProjection": "true"]
+            }
+        }
+    }
+}
+
+def room_version = "2.2.0-rc01"
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':app')
+
+    implementation 'com.ramotion.garlandview:garland-view:0.3.3'
+
+    /**..Room database dependencies..**/
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    /** android architecture component*/
+    api "android.arch.lifecycle:extensions:1.1.1"
+    api "android.arch.lifecycle:viewmodel:1.1.1"
+
+}

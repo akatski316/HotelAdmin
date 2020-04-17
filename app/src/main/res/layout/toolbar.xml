@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_alignParentTop="true"
+    android:background="?attr/colorPrimary"
+    android:contentInsetStart="0dp"
+    android:contentInsetLeft="0dp"
+    android:contentInsetEnd="0dp"
+    android:contentInsetRight="0dp"
+    android:elevation="15dp"
+    android:nestedScrollingEnabled="true"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:titleTextColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="30"
+            android:fontFamily="Coming Soon"
+            android:text="@string/app_name"
+            android:textColor="?attr/textcolor_theme"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/fragment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1100"
+            android:fontFamily="cursive"
+            android:text="@string/nav_bottom_rooms"
+            android:textColor="@color/app_theme_color"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>
+

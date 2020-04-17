@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "arc.hotelapp"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 34
+        versionName "1.0b"
+        testInstrumentationRunner "androidx.background.runner.AndroidJUnitRunner"
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+
+        compileOptions {
+            sourceCompatibility = JavaVersion.VERSION_1_8
+            targetCompatibility = JavaVersion.VERSION_1_8
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+def room_version = "2.2.4"
+def dagger_version = "2.22"
+def lottieVersion = "3.0.7"
+
+ext.versions = [
+        'compileSdk': 28,
+        'minSdk'    : 16,
+        'targetSdk' : 28,
+        'kotlin'    : '1.3.41',
+        'playcore'  : '1.6.1',
+
+]
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api 'androidx.appcompat:appcompat:1.1.0'
+    api 'com.google.android.material:material:1.2.0-alpha05'
+    api 'androidx.vectordrawable:vectordrawable-animated:1.1.0'
+    api 'androidx.browser:browser:1.2.0'
+    api 'androidx.constraintlayout:constraintlayout:1.1.3'
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+
+//    classpath 'com.google.gms:google-services:4.3.3'
+
+    /**..few UI libraries..*/
+    api 'androidx.recyclerview:recyclerview:1.2.0-alpha01'
+    api 'de.hdodenhof:circleimageview:3.0.0'
+    api 'androidx.cardview:cardview:1.0.0'
+    api 'at.blogc:expandabletextview:1.0.5'
+    api 'com.github.florent37:expansionpanel:1.2.2'
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    /**..shimmeer libraries..*/
+    api 'io.supercharge:shimmerlayout:2.1.0'
+    api 'com.github.bumptech.glide:glide:4.8.0'
+    api 'com.github.sharish:ShimmerRecyclerView:v1.3'
+
+    //auto image slider library for event fragment
+//    api 'com.github.smarteist:autoimageslider:1.2.0'
+    implementation 'com.synnapps:carouselview:0.1.5'
+
+    /**..Json library**/
+    api 'com.google.code.gson:gson:2.8.5'
+
+    /**..Room database dependencies..**/
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    /** android architecture component*/
+    api "android.arch.lifecycle:extensions:1.1.1"
+    api "android.arch.lifecycle:viewmodel:1.1.1"
+
+//    /**..optional - Guava support for Room, including Optional and ListenableFuture*/
+//    implementation "androidx.room:room-guava:$room_version"
+    implementation 'com.google.guava:guava:27.0.1-android'
+
+    /**..Test helpers*/
+    testImplementation "androidx.room:room-testing:$room_version"
+
+    /**..android networking library */
+    api 'com.amitshekhar.android:android-networking:1.0.2'
+
+    /**edit text library for forms*/
+    api 'com.github.thyrlian:AwesomeValidation:v4.2'
+
+    api 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
+
+
+
+
+}
+apply plugin: 'com.google.gms.google-services'

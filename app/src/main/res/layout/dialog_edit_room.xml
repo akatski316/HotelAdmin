@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/standard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:shadowColor="@color/blackTextColor"
+            android:buttonTint="@color/app_theme_color"
+            android:text="Standard"/>
+
+        <RadioButton
+            android:id="@+id/deluxe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/app_theme_color"
+            android:text="Deluxe"/>
+
+        <RadioButton
+            android:id="@+id/luxury"
+            android:backgroundTint="@color/app_theme_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/app_theme_color"
+            android:text="Luxury"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/user"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/capacity"
+        android:layout_marginStart="20dp"
+        android:textSize="14sp"
+        android:drawablePadding="10dp"
+        android:textColor="@color/cardDark"
+        android:hint="Capacity"
+        android:padding="20dp"
+        android:imeOptions="actionDone"
+        android:inputType="number"/>
+
+
+</LinearLayout>

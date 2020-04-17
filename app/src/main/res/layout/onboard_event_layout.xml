@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_animation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:lottie_fileName="events.json"
+        app:lottie_autoPlay="true"
+        android:layout_gravity="top"
+        android:layout_weight="12"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="?attr/textcolor_theme"
+        android:text="Events"/>
+
+    <TextView
+        android:layout_weight="3"
+        android:id="@+id/desc"
+        android:gravity="center"
+        android:layout_gravity="center|top"
+        android:textSize="15dp"
+        android:textColor="?attr/textcolor_faded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/get_started"
+        android:background="@drawable/button_background"
+        android:text="Get Started"
+        android:onClick="openLoginActivity"
+        android:visibility="invisible"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

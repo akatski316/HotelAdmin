@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:background="@color/cardDark"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="5dp"
+    app:cardElevation="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:background="@color/cardDark"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/roomNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/app_theme_color"/>
+
+        <TextView
+            android:id="@+id/roomType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="standard"
+            android:textColor="?attr/textcolor_faded"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/roomCapacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="?attr/textcolor_faded"/>
+
+            <ImageView
+                android:layout_marginLeft="3dp"
+                android:layout_width="16dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:src="@drawable/user"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
